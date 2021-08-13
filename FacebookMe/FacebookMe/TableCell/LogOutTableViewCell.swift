@@ -10,6 +10,7 @@ import UIKit
 class LogOutTableViewCell: UITableViewCell {
 
     @IBOutlet weak var logoutButton : UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
