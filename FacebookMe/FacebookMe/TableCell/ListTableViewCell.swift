@@ -10,12 +10,9 @@ import UIKit
 class ListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var emoji: UIImageView!
-    @IBOutlet weak var emojiLabel: UILabel!
+    @IBOutlet weak var listLabel: UILabel!
     
     
-    func setting() {
-        
-    }
         override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
