@@ -24,7 +24,7 @@
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="profileCell" rowHeight="100" id="Azh-Jc-wef" customClass="ProfileTableViewCell" customModule="FacebookMe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="49.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Azh-Jc-wef" id="AvC-Jb-7fa" customClass="ProfileTableViewCell" customModule="FacebookMe" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Azh-Jc-wef" id="AvC-Jb-7fa">
                                             <rect key="frame" x="0.0" y="0.0" width="384.5" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
