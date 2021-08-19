@@ -1,5 +1,10 @@
 # Project30
 ----
+[프로젝트 링크](https://github.com/soapyigu/Swift-30-Projects)
+![Swift30Projects](https://user-images.githubusercontent.com/70427427/130021929-ed61c154-ef63-4d23-8342-28c1b2eb844a.png)
+----
+
+
 진행하면서 생긴 의문점 및 정리 
 
 1. [FacebookMe](#facebookme)
@@ -40,7 +45,6 @@ Excel 과 SpreadSheet in Google 로 예를 들어보겠다. (멘토 현호님의
 x,y, width, height 모두 잡아야지 옳바르게 constraint를 한 것이다.<br>
 *이상한 점* <br>
 vertically로 중앙정렬을 하고 x , horizontally로 중앙정렬하고 x를 constraint 추가적으로 해줘야한다. 
-
 
 
 
