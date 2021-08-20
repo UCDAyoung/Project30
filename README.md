@@ -46,9 +46,11 @@ x,y, width, height 모두 잡아야지 옳바르게 constraint를 한 것이다.
 *이상한 점* <br>
 vertically로 중앙정렬을 하고 x , horizontally로 중앙정렬하고 x를 constraint 추가적으로 해줘야한다. 
 
+### private func 
 
+### only for code 
 
-
+### about DataStucture using MVC 
 
 
 
