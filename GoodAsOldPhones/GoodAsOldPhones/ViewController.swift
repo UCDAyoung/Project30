@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         "1984 Moto Portable"
     ]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         tableView.backgroundColor = .gray
         return tableView
     }
+    
     
 }
     
@@ -56,7 +58,5 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    
-
 }
 

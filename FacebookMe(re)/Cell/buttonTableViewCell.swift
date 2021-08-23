@@ -9,17 +9,32 @@ import UIKit
 
 class buttonTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var logoutButton: UIButton!
+    let logoutButton = UIButton()
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        addSubview(logoutButton)
+        configureButtonSettings()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureButtonSettings() {
+        logoutButton.translatesAutoresizingMaskIntoConstraints = false
+        logoutButton.setTitle("Log out", for: .normal)
+        logoutButton.setTitleColor(.red, for: .normal)
+        NSLayoutConstraint.activate([
+            logoutButton.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            logoutButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            
+            
+        ])
     }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    
+    
 
 }

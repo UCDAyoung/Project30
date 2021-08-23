@@ -7,114 +7,98 @@
 
 import UIKit
 
+
+//
+//struct configureInfo{
+//    var image : UIImage
+//    var text : String
+//}
+//
+
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var myTableView: UITableView!
+//    @IBOutlet weak var myTableView: UITableView!
     
-    
-    let numberOfHeader : [String] = [" "," ","FAVORITES"," "," "]
-    let numberOfSection : [Int] = [1,7,3,3,1]
-    let contentOfLabel : [[String]] = [
-        ["박준영","iOS개발자입니다."],
-        ["Friends","Events","Groups","HARVARD","Town Hall","Instant Games","See More..."],
-        ["Nflix","Books","See More..."],
-        ["Settings","Privacy Shortcuts","Help and Support"],
-        ["Log out"]
-    ]
-    let imgAssets : [[String]] = [
-        ["fb_friends",
-        "fb_events",
-        "fb_groups",
-        "fb_education",
-        "fb_town_hall",
-        "fb_games",],
-        ["fb_settings",
-        "fb_privacy_shortcuts",
-        "fb_help_and_support"]
-        
-    ]
+    let myTableView : UITableView = UITableView()
+    let sectionInfo = SectionInfo()
+    let header = HeaderInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.addSubview(myTableView)
+        
+        myTableView.frame = view.bounds
+        
         myTableView.delegate = self
         myTableView.dataSource = self
-        myTableView.backgroundColor = UIColor(rgb :0xf7f7f7)
+        
+        register()
         settings()
     }
-    func settings() {
+    
+    private func register(){
+        myTableView.register(ProfileTableViewCell.self, forCellReuseIdentifier: "profileCell")
+        myTableView.register(ListTableViewCell.self, forCellReuseIdentifier: "listCell")
+        myTableView.register(buttonTableViewCell.self, forCellReuseIdentifier: "buttonCell")
+    }
+    private func settings() {
         //네비게이션 바 색상
         navigationController?.navigationBar.barTintColor = UIColor(red: 59, green: 89, blue: 152)
         //커스텀 헤더 등록
-        myTableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "customHeader")
-
+//        myTableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "customHeader")
+//
     }
     //헤더 타이틀 설정
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return numberOfHeader[section]
+        return header.headerTitle[section]
     }
+//    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+//        return " "
+//    }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 10
+        return 20
     }
-
-
 }
+
+    
+
+
+
 
 extension ViewController : UITableViewDelegate,UITableViewDataSource{
     //섹션 갯수
     func numberOfSections(in tableView: UITableView) -> Int {
-        return numberOfHeader.count
+        return sectionInfo.numberOfSecton.count
     }
     //섹션 내부 행의 갯수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfSection[section]
+        return sectionInfo.numberOfSecton[section]
     }
+    
     //행에 무엇?
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         //구분은 섹션마다
         switch indexPath.section {
-        //프로필
+        
         case 0 :
+            myTableView.rowHeight = 70
             let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell") as! ProfileTableViewCell
-            cell.profileImg.image = UIImage(named: "Profile")
-            cell.profileLabel.text = contentOfLabel[indexPath.section][0]
-            cell.profileDetailLabel.text = contentOfLabel[indexPath.section][1]
+        
             return cell
-        //리스트
-        case 1 :
+        //디폴트
+        case 1,2,3 :
+            myTableView.rowHeight = 50
             let cell = tableView.dequeueReusableCell(withIdentifier: "listCell") as! ListTableViewCell
-            if indexPath.row < 6 {
-                cell.listImage.image = UIImage(named : imgAssets[0][indexPath.row])
-            }
-            cell.listLabel?.text = contentOfLabel[indexPath.section][indexPath.row]
-            if indexPath.row == 6 {
-                cell.listLabel.textColor = UIColor(red: 59, green: 89, blue: 152)
-            }
+            cell.configureInfo(section: indexPath.section, row: indexPath.row)
             return cell
-        //Favorite
-        case 2 :
-            let cell = tableView.dequeueReusableCell(withIdentifier: "listCell") as! ListTableViewCell
-            cell.listLabel?.text = contentOfLabel[indexPath.section][indexPath.row]
-            if indexPath.row == 2 {
-                cell.listLabel.textColor = UIColor(red: 59, green: 89, blue: 152)
-            }
-            return cell
-        //privacy
-        case 3 :
-            let cell = tableView.dequeueReusableCell(withIdentifier: "listCell") as! ListTableViewCell
-            cell.listImage?.image = UIImage(named : imgAssets[0][indexPath.row])
-            cell.listLabel?.text = contentOfLabel[indexPath.section][indexPath.row]
-            return cell
-        //button
         case 4 :
+            myTableView.rowHeight = 50
             let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell") as! buttonTableViewCell
-            cell.logoutButton.setTitle("Log out", for: .normal)
-            cell.tintColor = .red
             
             return cell
-                
-            
         default:
             return UITableViewCell()
         }

@@ -28,12 +28,12 @@ class ViewController: UIViewController{
         "CNU",
         "Town Hall",
         "Instant Games",
-        "String"
+        "See More..."
     ]
     var favoritesLabel : [String] = [
         "muck bang",
         "k-pop",
-        "temp"
+        "See More..."
     ]
     var settingsImages : [String] = [
         "fb_settings",
