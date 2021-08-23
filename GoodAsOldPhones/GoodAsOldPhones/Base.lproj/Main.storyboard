@@ -52,7 +52,6 @@
                                         <connections>
                                             <outlet property="productsImg" destination="dB4-ps-yrY" id="9bZ-zn-GXL"/>
                                             <outlet property="productsLabel" destination="ZTa-pY-Iam" id="xc0-Ue-GKp"/>
-                                            <segue destination="FS6-03-kfc" kind="show" id="kfp-0N-8tB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -204,10 +203,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L7f-nf-GNm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maT-oB-VCP">
-                                <rect key="frame" x="186" y="215" width="42" height="21"/>
+                                <rect key="frame" x="186" y="210" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -218,13 +217,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIf-M8-9Tl">
-                                <rect key="frame" x="186" y="317" width="42" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HkQ-eZ-9Ov"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -237,10 +229,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="AJq-vc-ef2"/>
                     <connections>
-                        <outlet property="addButton" destination="jEp-LY-YNF" id="1sa-PS-j21"/>
-                        <outlet property="backImg" destination="L7f-nf-GNm" id="PdG-Kx-BPJ"/>
-                        <outlet property="detailLabel" destination="xIf-M8-9Tl" id="aKs-uS-z45"/>
-                        <outlet property="titleLabel" destination="L7f-nf-GNm" id="dlE-WU-2mz"/>
+                        <outlet property="addToButton" destination="jEp-LY-YNF" id="gy8-Zc-Ayo"/>
+                        <outlet property="backImage" destination="L7f-nf-GNm" id="xtY-zr-kxb"/>
+                        <outlet property="titleLabel" destination="maT-oB-VCP" id="dM3-H5-SMK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4aL-AY-Quq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

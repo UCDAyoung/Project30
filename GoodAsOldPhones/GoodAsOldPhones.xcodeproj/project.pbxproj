@@ -49,9 +49,17 @@
 			path = cellView;
 			sourceTree = "<group>";
 		};
+		33820C8C26D357300008E401 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3384C26826CA30C700FF28F4 = {
 			isa = PBXGroup;
 			children = (
+				33820C8C26D357300008E401 /* Model */,
 				336774A726CBA67F00B574F2 /* cellView */,
 				3384C27326CA30C700FF28F4 /* GoodAsOldPhones */,
 				3384C27226CA30C700FF28F4 /* Products */,

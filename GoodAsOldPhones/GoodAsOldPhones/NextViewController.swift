@@ -15,18 +15,19 @@ class NextViewController: UIViewController {
         "phone-fullscreen3",
         "phone-fullscreen4"
     ]
-
-    @IBOutlet weak var backImg: UIImageView!
-    @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var titleLabel: UIImageView!
-    @IBOutlet weak var detailLabel: UILabel!
+    
+    @IBOutlet weak var titleLabel : UILabel!
+    @IBOutlet weak var addToButton : UIButton!
+    @IBOutlet weak var backImage : UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //어떻게 index를 전달해서 받을 수 있지??
-        
     }
+    
+    
+    
+    
     
     
     

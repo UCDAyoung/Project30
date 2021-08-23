@@ -25,19 +25,24 @@ class ViewController: UIViewController {
         "1984 Moto Portable"
     ]
     
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         myTableView.delegate = self
         myTableView.dataSource = self
+        let taps = UITapGestureRecognizer(target: myTableView, action: #selector(handleTapGesture))
+        self.myTableView.addGestureRecognizer(taps)
+        
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         tableView.backgroundColor = .gray
         return tableView
     }
     
-    
+    @objc func handleTapGesture(recognizer : UITapGestureRecognizer){
+        print("Touch review")
+    }
 }
     
 

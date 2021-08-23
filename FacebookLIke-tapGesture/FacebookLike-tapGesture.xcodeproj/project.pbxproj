@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3330BBA526D2413B0099DF99 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3330BBA526D2413B0099DF99 /* FacebookLike-tapGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FacebookLike-tapGesture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3330BBA826D2413B0099DF99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3330BBAA26D2413B0099DF99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3330BBAC26D2413B0099DF99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		3330BB9C26D2413B0099DF99 = {
 			isa = PBXGroup;
 			children = (
-				3330BBA726D2413B0099DF99 /* Practice */,
+				3330BBA726D2413B0099DF99 /* FacebookLike-tapGesture */,
 				3330BBA626D2413B0099DF99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		3330BBA626D2413B0099DF99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3330BBA526D2413B0099DF99 /* Practice.app */,
+				3330BBA526D2413B0099DF99 /* FacebookLike-tapGesture.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3330BBA726D2413B0099DF99 /* Practice */ = {
+		3330BBA726D2413B0099DF99 /* FacebookLike-tapGesture */ = {
 			isa = PBXGroup;
 			children = (
 				3330BBA826D2413B0099DF99 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				3330BBB326D2413D0099DF99 /* LaunchScreen.storyboard */,
 				3330BBB626D2413D0099DF99 /* Info.plist */,
 			);
-			path = Practice;
+			path = "FacebookLike-tapGesture";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3330BBA426D2413B0099DF99 /* Practice */ = {
+		3330BBA426D2413B0099DF99 /* FacebookLike-tapGesture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3330BBB926D2413D0099DF99 /* Build configuration list for PBXNativeTarget "Practice" */;
+			buildConfigurationList = 3330BBB926D2413D0099DF99 /* Build configuration list for PBXNativeTarget "FacebookLike-tapGesture" */;
 			buildPhases = (
 				3330BBA126D2413B0099DF99 /* Sources */,
 				3330BBA226D2413B0099DF99 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Practice;
+			name = "FacebookLike-tapGesture";
 			productName = Practice;
-			productReference = 3330BBA526D2413B0099DF99 /* Practice.app */;
+			productReference = 3330BBA526D2413B0099DF99 /* FacebookLike-tapGesture.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3330BBA026D2413B0099DF99 /* Build configuration list for PBXProject "Practice" */;
+			buildConfigurationList = 3330BBA026D2413B0099DF99 /* Build configuration list for PBXProject "FacebookLike-tapGesture" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3330BBA426D2413B0099DF99 /* Practice */,
+				3330BBA426D2413B0099DF99 /* FacebookLike-tapGesture */,
 			);
 		};
 /* End PBXProject section */
@@ -288,12 +288,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4ZNP7J459;
-				INFOPLIST_FILE = Practice/Info.plist;
+				INFOPLIST_FILE = "FacebookLike-tapGesture/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = UCDAyoung.Practice;
+				PRODUCT_BUNDLE_IDENTIFIER = "UCDAyoung.FacebookLike-tapGesture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,12 +307,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4ZNP7J459;
-				INFOPLIST_FILE = Practice/Info.plist;
+				INFOPLIST_FILE = "FacebookLike-tapGesture/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = UCDAyoung.Practice;
+				PRODUCT_BUNDLE_IDENTIFIER = "UCDAyoung.FacebookLike-tapGesture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3330BBA026D2413B0099DF99 /* Build configuration list for PBXProject "Practice" */ = {
+		3330BBA026D2413B0099DF99 /* Build configuration list for PBXProject "FacebookLike-tapGesture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3330BBB726D2413D0099DF99 /* Debug */,
@@ -331,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3330BBB926D2413D0099DF99 /* Build configuration list for PBXNativeTarget "Practice" */ = {
+		3330BBB926D2413D0099DF99 /* Build configuration list for PBXNativeTarget "FacebookLike-tapGesture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3330BBBA26D2413D0099DF99 /* Debug */,
