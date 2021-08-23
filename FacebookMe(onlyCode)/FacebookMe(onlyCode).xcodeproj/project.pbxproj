@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		330F567E26C756C1009569AC /* FacebookMe(re).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FacebookMe(re).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		330F567E26C756C1009569AC /* FacebookMe(onlyCode).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FacebookMe(onlyCode).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		330F568126C756C1009569AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		330F568326C756C1009569AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		330F568526C756C1009569AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			children = (
 				3338113926CE83510087DFE0 /* Model */,
 				33A2266126C8D28E00699557 /* Cell */,
-				330F568026C756C1009569AC /* FacebookMe(re) */,
+				330F568026C756C1009569AC /* FacebookMe(onlyCode) */,
 				330F567F26C756C1009569AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,12 +64,12 @@
 		330F567F26C756C1009569AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				330F567E26C756C1009569AC /* FacebookMe(re).app */,
+				330F567E26C756C1009569AC /* FacebookMe(onlyCode).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		330F568026C756C1009569AC /* FacebookMe(re) */ = {
+		330F568026C756C1009569AC /* FacebookMe(onlyCode) */ = {
 			isa = PBXGroup;
 			children = (
 				330F568126C756C1009569AC /* AppDelegate.swift */,
@@ -80,7 +80,7 @@
 				330F568C26C756C2009569AC /* LaunchScreen.storyboard */,
 				330F568F26C756C2009569AC /* Info.plist */,
 			);
-			path = "FacebookMe(re)";
+			path = "FacebookMe(onlyCode)";
 			sourceTree = "<group>";
 		};
 		3338113926CE83510087DFE0 /* Model */ = {
@@ -107,9 +107,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		330F567D26C756C1009569AC /* FacebookMe(re) */ = {
+		330F567D26C756C1009569AC /* FacebookMe(onlyCode) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 330F569226C756C2009569AC /* Build configuration list for PBXNativeTarget "FacebookMe(re)" */;
+			buildConfigurationList = 330F569226C756C2009569AC /* Build configuration list for PBXNativeTarget "FacebookMe(onlyCode)" */;
 			buildPhases = (
 				330F567A26C756C1009569AC /* Sources */,
 				330F567B26C756C1009569AC /* Frameworks */,
@@ -119,9 +119,9 @@
 			);
 			dependencies = (
 			);
-			name = "FacebookMe(re)";
+			name = "FacebookMe(onlyCode)";
 			productName = "FacebookMe(re)";
-			productReference = 330F567E26C756C1009569AC /* FacebookMe(re).app */;
+			productReference = 330F567E26C756C1009569AC /* FacebookMe(onlyCode).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +138,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 330F567926C756C0009569AC /* Build configuration list for PBXProject "FacebookMe(re)" */;
+			buildConfigurationList = 330F567926C756C0009569AC /* Build configuration list for PBXProject "FacebookMe(onlyCode)" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				330F567D26C756C1009569AC /* FacebookMe(re) */,
+				330F567D26C756C1009569AC /* FacebookMe(onlyCode) */,
 			);
 		};
 /* End PBXProject section */
@@ -332,12 +332,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4ZNP7J459;
-				INFOPLIST_FILE = "FacebookMe(re)/Info.plist";
+				INFOPLIST_FILE = "FacebookMe(onlyCode)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "UCDAyoung.FacebookMe-re-";
+				PRODUCT_BUNDLE_IDENTIFIER = "UCDAyoung.FacebookMe-onlyCode-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,12 +351,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4ZNP7J459;
-				INFOPLIST_FILE = "FacebookMe(re)/Info.plist";
+				INFOPLIST_FILE = "FacebookMe(onlyCode)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "UCDAyoung.FacebookMe-re-";
+				PRODUCT_BUNDLE_IDENTIFIER = "UCDAyoung.FacebookMe-onlyCode-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -366,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		330F567926C756C0009569AC /* Build configuration list for PBXProject "FacebookMe(re)" */ = {
+		330F567926C756C0009569AC /* Build configuration list for PBXProject "FacebookMe(onlyCode)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				330F569026C756C2009569AC /* Debug */,
@@ -375,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		330F569226C756C2009569AC /* Build configuration list for PBXNativeTarget "FacebookMe(re)" */ = {
+		330F569226C756C2009569AC /* Build configuration list for PBXNativeTarget "FacebookMe(onlyCode)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				330F569326C756C2009569AC /* Debug */,
