@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         myTableView.delegate = self
         myTableView.dataSource = self
-        let taps = UITapGestureRecognizer(target: myTableView, action: #selector(handleTapGesture))
+        let taps = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture))
         self.myTableView.addGestureRecognizer(taps)
         
     }
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     }
     
     @objc func handleTapGesture(recognizer : UITapGestureRecognizer){
-        print("Touch review")
+        print("Touch review")        
     }
 }
     

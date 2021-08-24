@@ -18,8 +18,6 @@ import UIKit
 class ViewController: UIViewController {
 
     
-//    @IBOutlet weak var myTableView: UITableView!
-    
     let myTableView : UITableView = UITableView()
     let sectionInfo = SectionInfo()
     let header = HeaderInfo()
@@ -28,9 +26,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(myTableView)
-        
         myTableView.frame = view.bounds
-        
         myTableView.delegate = self
         myTableView.dataSource = self
         
@@ -47,16 +43,12 @@ class ViewController: UIViewController {
         //네비게이션 바 색상
         navigationController?.navigationBar.barTintColor = UIColor(red: 59, green: 89, blue: 152)
         //커스텀 헤더 등록
-//        myTableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "customHeader")
-//
+        //myTableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "customHeader")
     }
     //헤더 타이틀 설정
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return header.headerTitle[section]
     }
-//    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-//        return " "
-//    }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 20
     }
@@ -86,9 +78,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         case 0 :
             myTableView.rowHeight = 70
             let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell") as! ProfileTableViewCell
-        
             return cell
-        //디폴트
         case 1,2,3 :
             myTableView.rowHeight = 50
             let cell = tableView.dequeueReusableCell(withIdentifier: "listCell") as! ListTableViewCell
@@ -97,12 +87,10 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         case 4 :
             myTableView.rowHeight = 50
             let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell") as! buttonTableViewCell
-            
             return cell
         default:
             return UITableViewCell()
         }
-        return UITableViewCell()
     }
     
 }

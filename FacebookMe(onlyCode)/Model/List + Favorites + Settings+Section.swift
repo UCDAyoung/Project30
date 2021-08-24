@@ -11,7 +11,7 @@ let list = ListInfo()
 let favorites = FavoritesInfo()
 let settings = SettingsInfo()
 
-class SectionInfo {
+struct SectionInfo {
     var numberOfSecton : [Int] = [1,list.text.count,favorites.text.count,settings.text.count,1]
 }
 
