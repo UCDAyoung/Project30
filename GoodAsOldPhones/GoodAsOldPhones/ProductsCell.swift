@@ -7,17 +7,13 @@
 
 import UIKit
 
-class cellView: UITableViewCell {
+class ProductsCell: UITableViewCell {
         
     @IBOutlet weak var productsImg: UIImageView!
     @IBOutlet weak var productsLabel: UILabel!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-//        productsImg.image = UIImage(named: String)
-        
-        
-        
     }
     required init?(coder: NSCoder) {
 //        fatalError("init(coder:) has not been implemented") //--> 오류발생하여 아래로 바꿨는데, 이유가 와닿지 않습니다 ㅠ

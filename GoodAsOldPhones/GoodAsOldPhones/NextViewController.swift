@@ -6,16 +6,10 @@
 //
 
 import UIKit
-
 class NextViewController: UIViewController {
-
-    let imgList : [String] = [
-        "phone-fullscreen1",
-        "phone-fullscreen2",
-        "phone-fullscreen3",
-        "phone-fullscreen4"
-    ]
     
+    let assets = Assets()
+   
     @IBOutlet weak var titleLabel : UILabel!
     @IBOutlet weak var addToButton : UIButton!
     @IBOutlet weak var backImage : UIImageView!
@@ -23,11 +17,17 @@ class NextViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addToButton.setTitle("ADD TO CART", for: .normal)
+        
+
     }
+    func settings(indexPath : IndexPath){
+        self.titleLabel.text = assets.productsTitle[indexPath.row]
+        self.backImage.image = UIImage(named: assets.backImage[indexPath.row])
     
-    
-    
-    
+    }
+        
     
     
     

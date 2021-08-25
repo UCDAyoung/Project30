@@ -10,39 +10,46 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var myTableView : UITableView!
-    
+    let assets = Assets()
 
-    let productImgList : [String] = [
-        "image-cell1",
-        "image-cell2",
-        "image-cell3",
-        "image-cell4"
-    ]
-    let numberOfCellString : [String] = [
-        "1907 Wall Set",
-        "1921 Dial phone",
-        "1937 Desh Set",
-        "1984 Moto Portable"
-    ]
-    
-     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         myTableView.delegate = self
         myTableView.dataSource = self
-        let taps = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture))
-        self.myTableView.addGestureRecognizer(taps)
-        
+//        let taps = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(recognizer:)))
+//        self.myTableView.addGestureRecognizer(taps)
+//
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         tableView.backgroundColor = .gray
         return tableView
     }
     
-    @objc func handleTapGesture(recognizer : UITapGestureRecognizer){
-        print("Touch review")        
+    
+//    @objc func handleTapGesture(recognizer : UITapGestureRecognizer){
+    //제스처랑 didSelectRowAt메소드랑 같이 사용하면 에러남
+//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyboard.instantiateViewController(identifier: "NextViewController")
+        nextViewController.modalPresentationStyle = .fullScreen
+        
+        present(nextViewController, animated: true, completion: nil)
+        
     }
+    
+        
+        
+//        switch indexPath.row {
+        //누를 때마다 누르는 상세페이지는 다르지만, 안에 Image랑 텍스트, 디테일만 다른 것일 뿐, 그니까 셀에 모델만 바꿔주면 됨. ㅇㅋ?
+        
+//        let cell = tableView.
+//        case 0:
+//        case 1:
+//        case 2:
+//        case 3:
+        
 }
     
 
@@ -56,12 +63,13 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! cellView
-        cell.productsImg.image = UIImage(named: productImgList[indexPath.row])
-        cell.productsLabel.text = numberOfCellString[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProductsCell
+        cell.productsImg.image = UIImage(named: assets.productsIconImage[indexPath.row])
+        cell.productsLabel.text = assets.productsTitle[indexPath.row]
         
         return cell
     }
+    
     
 }
 
