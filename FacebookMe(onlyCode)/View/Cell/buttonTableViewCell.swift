@@ -8,16 +8,16 @@
 import UIKit
 
 class buttonTableViewCell: UITableViewCell {
-
+    //UI요소 생성
     let logoutButton = UIButton()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         addSubview(logoutButton)
-        configureButtonSettings()
+        configureConstraints()
     }
-    func configureButtonSettings() {
+    private func configureConstraints() {
         logoutButton.translatesAutoresizingMaskIntoConstraints = false
         logoutButton.setTitle("Log out", for: .normal)
         logoutButton.setTitleColor(.red, for: .normal)

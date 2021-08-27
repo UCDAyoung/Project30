@@ -14,8 +14,7 @@ class myImageView : UIImageView {
 
 class ProfileTableViewCell: UITableViewCell {
     
-    let info = ProfileInfo(name: "박준영", detail : "iOS 개발자 될래요", imgName: "Profile")
-    //인스턴스 생성
+    //UI요소 생성
     let profileImg = UIImageView()
     let titleLabel = UILabel()
     let subtitleLabel = UILabel()
@@ -30,14 +29,19 @@ class ProfileTableViewCell: UITableViewCell {
     }
     
     // addSubview로 view에 UiView올리기
-    func addSubviews() {
+    private func addSubviews() {
         addSubview(profileImg)
         addSubview(titleLabel)
         addSubview(subtitleLabel)
     }
-    
+    // Info 설정 / 이미지 및 텍스트 넣기
+    private func configureInfo(){
+        profileImg.image = UIImage(named: profileInfo.imageName)
+        titleLabel.text = profileInfo.name
+        subtitleLabel.text = profileInfo.detail
+    }
     // constratin 설정
-    func configureConstraint(){
+    private func configureConstraint(){
         profileImg.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -58,13 +62,7 @@ class ProfileTableViewCell: UITableViewCell {
                         
         ])
     }
-    // Info 설정 / 이미지 및 텍스트 넣기
-    func configureInfo(){
-        profileImg.image = UIImage(named: self.info.imageName)
-        titleLabel.text = self.info.name
-        subtitleLabel.text = self.info.detail
-    }
-    
+
     //storyboard
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -11,6 +11,5 @@ import Foundation
 
 struct HeaderInfo {
     let headerTitle : [String] = [" "," ","FAVORITES"," "," "]
-   
 }
 

@@ -9,8 +9,8 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
     
-    //인스턴스 생성
-    let lists = ListInfo()
+    //데이터모델 생성
+    let aboutMe = AboutMeInfo()
     let favorites = FavoritesInfo()
     let settings = SettingsInfo()
     // UI요소 생성
@@ -23,16 +23,16 @@ class ListTableViewCell: UITableViewCell {
         addSubviews()
         configureConstraints()
         
-        
     }
+    
     //addsubview
-    func addSubviews(){
+    private func addSubviews(){
         addSubview(listImage)
         addSubview(listLabel)
     }
 
     //constraint설정
-    func configureConstraints(){
+    private func configureConstraints(){
         listImage.translatesAutoresizingMaskIntoConstraints = false
         listLabel.translatesAutoresizingMaskIntoConstraints = false
     
@@ -48,17 +48,19 @@ class ListTableViewCell: UITableViewCell {
         ])
     }
     // image 및 text 설정
-    func configureInfo( section : Int, row : Int ){
+    public func configureInfo( section : Int, row : Int ){
         switch section {
         case 1:
-            self.listImage.image = UIImage(named : lists.image[row])
-            self.listLabel.text = lists.text[row]
-            if row == lists.text.count-1 {
+            self.listImage.image = UIImage(named : aboutMe.image[row])
+            self.listLabel.text = aboutMe.text[row]
+            // See More... 파란색으로 변경
+            if row == aboutMe.text.count-1 {
                 self.listLabel.textColor = UIColor(red: 59, green: 89, blue: 152)
             }
         case 2:
             self.listLabel.text = favorites.text[row]
             self.imageView?.image = nil
+            // See More... 파란색으로 변경
             if row == favorites.text.count-1 {
                 self.listLabel.textColor = UIColor(red: 59, green: 89, blue: 152)
             }

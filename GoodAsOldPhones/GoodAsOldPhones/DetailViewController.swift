@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class NextViewController: UIViewController {
+class DetailViewController: UIViewController,UINavigationControllerDelegate {
     
     let assets = Assets()
    
@@ -20,15 +20,32 @@ class NextViewController: UIViewController {
         
         addToButton.setTitle("ADD TO CART", for: .normal)
         
+//        let backBtn = UIImage(named: "icon-about-email")
+//        let leftItem = UIBarButtonItem(image: backBtn, style: .plain, target: self, action: nil)
+//        navVC.navigationItem.leftBarButtonItem = leftItem
+    
+        
+        
 
     }
+
+    
     func settings(indexPath : IndexPath){
         self.titleLabel.text = assets.productsTitle[indexPath.row]
         self.backImage.image = UIImage(named: assets.backImage[indexPath.row])
     
     }
-        
+    private func configureTitleLabel(){
+        titleLabel.fon
+    }
     
+    private func configureAddToCartButton(){
+        addToButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        
+    }
+    @objc func didTapButton(){
+        print("didTapButton")
+    }
     
     
     

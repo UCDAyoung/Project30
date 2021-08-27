@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+let profileInfo = ProfileInfo(name: "박준영", detail : "iOS 개발자 될래요", imgName: "Profile")
 
 struct ProfileInfo {
     let name : String

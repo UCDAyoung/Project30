@@ -9,29 +9,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var input : UITextField!
+    @IBOutlet weak var button : UIButton!
+    var temp : String?
     
-    let button = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .systemGray
         
-        button.setTitle("button", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        view.addSubview(button)
-        button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-        button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
+        //        button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
     }
     
-    @objc func tapButton(){
-        
-        let rootVC = SecondViewController() //root
-        rootVC.title = "welcome"        //root
-        let navVC = UINavigationController(rootViewController: rootVC)//rootVC가 root인 navigationController navVC
-        
-        navVC.modalPresentationStyle = .fullScreen
-        present(navVC, animated: true, completion: nil)
-        
+    @IBAction func tapButton(_ sender : UIButton){
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "SecondView") as? SecondViewController else { return }
+        present(nextVC, animated: true, completion: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is SecondViewController {
+            let nextVC = segue.destination as? SecondViewController
+            nextVC?.receivedText = input.text
+        }
     }
 
 
@@ -39,7 +37,10 @@ class ViewController: UIViewController {
 
 class SecondViewController : UIViewController {
     
+    private let label = UILabel()
     private let button = UIButton()
+    var receivedText : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemRed
@@ -47,22 +48,27 @@ class SecondViewController : UIViewController {
         
         button.setTitle("button", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        view.addSubview(button)
-        button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-        button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "dismiss", style: .plain, target: self, action: #selector(dismissSelf))
+        view.addSubview(button)
+        view.addSubview(label)
+        
+        button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        label.frame = CGRect(x : 100, y: 300, width :300, height: 100)
+        label.tintColor = .black
+        label.backgroundColor = .white
+        
+        
+        
+        button.addTarget(self, action: #selector(tapDimissButton(_:)), for: .touchUpInside)
+        label.text = receivedText
 
     }
     
-    @objc private func tapButton(){
-        let vc = UIViewController()
-        vc.view.backgroundColor = .white
-        vc.title = "hi"
-        present(vc, animated: true, completion: nil)
+    @objc func tapDimissButton(_ sender : UIButton) {
+        print("hello")
+        self.navigationController?.popViewController(animated: true)
     }
-    @objc private func dismissSelf(){
-        dismiss(animated: true, completion: nil)
-    }
+    
+        
 }
 

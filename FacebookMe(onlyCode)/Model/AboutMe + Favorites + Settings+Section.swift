@@ -7,15 +7,16 @@
 
 import Foundation
 
-let list = ListInfo()
+//??인스턴스를 생성해서 사용하는게 이상한 것 같음. 구조가 이상함..질문 반드시 필요
+let aboutMe = AboutMeInfo()
 let favorites = FavoritesInfo()
 let settings = SettingsInfo()
 
-struct SectionInfo {
-    var numberOfSecton : [Int] = [1,list.text.count,favorites.text.count,settings.text.count,1]
+struct SectionNumber {
+    var number : [Int] = [1,aboutMe.text.count,favorites.text.count,settings.text.count,1]
 }
 
-struct ListInfo {
+struct AboutMeInfo {
     let text : [String] = [
         "Friends",
         "Events",

@@ -17,7 +17,7 @@
 		33A2266526C8D2E900699557 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A2266426C8D2E900699557 /* ListTableViewCell.swift */; };
 		33A2266726C8D30B00699557 /* buttonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A2266626C8D30B00699557 /* buttonTableViewCell.swift */; };
 		33A2266A26C8D3B000699557 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A2266926C8D3B000699557 /* ProfileTableViewCell.swift */; };
-		33E2924626D254F7004C88F4 /* List + Favorites + Settings+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2924526D254F6004C88F4 /* List + Favorites + Settings+Section.swift */; };
+		33E2924626D254F7004C88F4 /* AboutMe + Favorites + Settings+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2924526D254F6004C88F4 /* AboutMe + Favorites + Settings+Section.swift */; };
 		33E2924826D27BED004C88F4 /* HeaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2924726D27BED004C88F4 /* HeaderInfo.swift */; };
 		33E2924C26D344B1004C88F4 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2924B26D344B1004C88F4 /* Header.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		33A2266426C8D2E900699557 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		33A2266626C8D30B00699557 /* buttonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonTableViewCell.swift; sourceTree = "<group>"; };
 		33A2266926C8D3B000699557 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		33E2924526D254F6004C88F4 /* List + Favorites + Settings+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List + Favorites + Settings+Section.swift"; sourceTree = "<group>"; };
+		33E2924526D254F6004C88F4 /* AboutMe + Favorites + Settings+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AboutMe + Favorites + Settings+Section.swift"; sourceTree = "<group>"; };
 		33E2924726D27BED004C88F4 /* HeaderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderInfo.swift; sourceTree = "<group>"; };
 		33E2924B26D344B1004C88F4 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				3338113926CE83510087DFE0 /* Model */,
-				33A2266126C8D28E00699557 /* Cell */,
+				334EB2AF26D88FF8006E0344 /* View */,
+				334EB2B026D8902A006E0344 /* Controller */,
 				330F568026C756C1009569AC /* FacebookMe(onlyCode) */,
 				330F567F26C756C1009569AC /* Products */,
 			);
@@ -74,7 +75,6 @@
 			children = (
 				330F568126C756C1009569AC /* AppDelegate.swift */,
 				330F568326C756C1009569AC /* SceneDelegate.swift */,
-				330F568526C756C1009569AC /* ViewController.swift */,
 				330F568726C756C1009569AC /* Main.storyboard */,
 				330F568A26C756C2009569AC /* Assets.xcassets */,
 				330F568C26C756C2009569AC /* LaunchScreen.storyboard */,
@@ -88,9 +88,25 @@
 			children = (
 				3338113A26CE83C00087DFE0 /* ProfileInfo.swift */,
 				33E2924726D27BED004C88F4 /* HeaderInfo.swift */,
-				33E2924526D254F6004C88F4 /* List + Favorites + Settings+Section.swift */,
+				33E2924526D254F6004C88F4 /* AboutMe + Favorites + Settings+Section.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		334EB2AF26D88FF8006E0344 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33A2266126C8D28E00699557 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		334EB2B026D8902A006E0344 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				330F568526C756C1009569AC /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		33A2266126C8D28E00699557 /* Cell */ = {
@@ -176,7 +192,7 @@
 			files = (
 				330F568626C756C1009569AC /* ViewController.swift in Sources */,
 				33E2924826D27BED004C88F4 /* HeaderInfo.swift in Sources */,
-				33E2924626D254F7004C88F4 /* List + Favorites + Settings+Section.swift in Sources */,
+				33E2924626D254F7004C88F4 /* AboutMe + Favorites + Settings+Section.swift in Sources */,
 				3338113B26CE83C00087DFE0 /* ProfileInfo.swift in Sources */,
 				33A2266A26C8D3B000699557 /* ProfileTableViewCell.swift in Sources */,
 				33E2924C26D344B1004C88F4 /* Header.swift in Sources */,

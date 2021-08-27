@@ -194,10 +194,10 @@
             </objects>
             <point key="canvasLocation" x="905.79710144927549" y="841.74107142857144"/>
         </scene>
-        <!--Next View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="lDH-Z4-k4M">
             <objects>
-                <viewController storyboardIdentifier="NextViewController" id="FS6-03-kfc" customClass="NextViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextViewController" id="FS6-03-kfc" customClass="DetailViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FHC-p7-1mg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -31,14 +31,16 @@ class ViewController: UIViewController {
     //제스처랑 didSelectRowAt메소드랑 같이 사용하면 에러남
 //    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let nextViewController = storyboard.instantiateViewController(identifier: "NextViewController")
-        nextViewController.modalPresentationStyle = .fullScreen
         
-        present(nextViewController, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyboard.instantiateViewController(identifier: "NextViewController") as DetailViewController
+        let navVC = UINavigationController(rootViewController: nextViewController)
+        navVC.modalPresentationStyle = .fullScreen
+        
+        
+        present(navVC, animated: true, completion: nil)
         
     }
-    
         
         
 //        switch indexPath.row {
