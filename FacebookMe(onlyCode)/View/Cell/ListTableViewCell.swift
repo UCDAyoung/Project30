@@ -47,7 +47,7 @@ class ListTableViewCell: UITableViewCell {
             
         ])
     }
-    // image 및 text 설정
+    // image 및 text 설정 - ViewController에서 사용되기 때문에, public
     public func configureInfo( section : Int, row : Int ){
         switch section {
         case 1:

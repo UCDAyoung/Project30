@@ -8,7 +8,7 @@
 import Foundation
 
 
-
+//헤더 타이틀 
 struct HeaderInfo {
     let headerTitle : [String] = [" "," ","FAVORITES"," "," "]
 }

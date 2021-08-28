@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// 헤더도 따로 정리하고 싶어서 만들어놓은 클래스
 class Header : UITableView{
 
     

@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         register()
         
     }
-    
+    //기본적인 테이블뷰 세팅
     private func settings() {
             // add & delegate
         view.addSubview(myTableView)
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             //커스텀 헤더 등록
             //myTableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "customHeader")
     }
-    
+    //regitser
     private func register(){
         
         myTableView.register(ProfileTableViewCell.self, forCellReuseIdentifier: "profileCell")

@@ -11,11 +11,11 @@ import Foundation
 let aboutMe = AboutMeInfo()
 let favorites = FavoritesInfo()
 let settings = SettingsInfo()
-
+//섹션 갯수
 struct SectionNumber {
     var number : [Int] = [1,aboutMe.text.count,favorites.text.count,settings.text.count,1]
 }
-
+//AboutMe + Favorites + Settings 데이터모델
 struct AboutMeInfo {
     let text : [String] = [
         "Friends",
