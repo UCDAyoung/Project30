@@ -9,13 +9,23 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var currentIndex : Int = 0
+    var imageModel = ImageModel()
+//실패    var currentImage : UIImage!
+    var indexPathRow : Int = 0
     @IBOutlet weak var imageView : UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageView.image = UIImage(named:imageModel.name[indexPathRow] )
+        
+        
+        //pinch 적용하기
+        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(doPinch(_:)))
+        self.view.addGestureRecognizer(pinch)
+    }
+    
+    @objc func doPinch(_ pinch : UIPinchGestureRecognizer){
+        imageView.transform = imageView.transform.scaledBy(x: pinch.scale, y: pinch.scale)
     }
     
 

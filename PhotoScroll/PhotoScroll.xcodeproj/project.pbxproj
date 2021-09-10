@@ -46,6 +46,9 @@
 		333BA8C726E739D50052EF99 = {
 			isa = PBXGroup;
 			children = (
+				3372094826EB3C860008FD80 /* Model */,
+				3372094A26EB3CBE0008FD80 /* View */,
+				3372094926EB3CA30008FD80 /* ViewController */,
 				333BA8D226E739D50052EF99 /* PhotoScroll */,
 				333BA8D126E739D50052EF99 /* Products */,
 			);
@@ -65,15 +68,36 @@
 				333BA8D926E739D50052EF99 /* Main.storyboard */,
 				333BA8D326E739D50052EF99 /* AppDelegate.swift */,
 				333BA8D526E739D50052EF99 /* SceneDelegate.swift */,
-				333BA8D726E739D50052EF99 /* MainViewController.swift */,
-				333BA8ED26E74F540052EF99 /* DetailViewController.swift */,
 				333BA8DE26E739D90052EF99 /* LaunchScreen.storyboard */,
 				333BA8E126E739D90052EF99 /* Info.plist */,
 				333BA8E926E73D660052EF99 /* Assets.xcassets */,
-				333BA8E726E73C430052EF99 /* CollectionViewCell.swift */,
-				333BA8EB26E73DB30052EF99 /* ImageModel.swift */,
 			);
 			path = PhotoScroll;
+			sourceTree = "<group>";
+		};
+		3372094826EB3C860008FD80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				333BA8EB26E73DB30052EF99 /* ImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3372094926EB3CA30008FD80 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				333BA8D726E739D50052EF99 /* MainViewController.swift */,
+				333BA8ED26E74F540052EF99 /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3372094A26EB3CBE0008FD80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				333BA8E726E73C430052EF99 /* CollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
