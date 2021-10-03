@@ -34,7 +34,9 @@ class MainViewController: UIViewController {
            let indexPath = collectionView.indexPath(for: cell),
            // segue의 도착지점이 DetailViewController가 아니ㄱ면
             let detailViewController = segue.destination as? DetailViewController {
-            detailViewController.indexPathRow = indexPath.row //와 이렇게 MainViewController에 있는 정보를 DetailViewController로  받는거구나?
+//            detailViewController.indexPathRow = indexPath.row
+            detailViewController.imageName = imageModel.name[indexPath.row]
+            //와 이렇게 MainViewController에 있는 정보를 DetailViewController로  받는거구나?
 //            왜 안됐지....
 //            detailViewController.currentIndex = UIImage(named: imageModel.name[indexPath.row])
             

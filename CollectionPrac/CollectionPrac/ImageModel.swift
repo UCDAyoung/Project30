@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct ImageModel {
     let name : [String] = [
@@ -14,5 +15,5 @@ struct ImageModel {
         "clothes_1",
         "search",
         "vacumn"
-    ]
+    ]    
 }

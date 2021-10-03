@@ -14,7 +14,8 @@ class CollectionViewCell: UICollectionViewCell {
     
     func settings(row : Int) {
         self.backgroundColor = .blue
-        
+        print("******"+imageModel.name[row])
+        imageView.image = UIImage(named: imageModel.name[row]) ?? UIImage()
     }
     
     override var isSelected: Bool {

@@ -16,6 +16,8 @@
 		333BA8EA26E73D670052EF99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333BA8E926E73D660052EF99 /* Assets.xcassets */; };
 		333BA8EC26E73DB30052EF99 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333BA8EB26E73DB30052EF99 /* ImageModel.swift */; };
 		333BA8EE26E74F540052EF99 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333BA8ED26E74F540052EF99 /* DetailViewController.swift */; };
+		3372094C26EB4A6D0008FD80 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372094B26EB4A6D0008FD80 /* DetailScrollView.swift */; };
+		3372094E26EB625D0008FD80 /* ZoomedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372094D26EB625D0008FD80 /* ZoomedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		333BA8E926E73D660052EF99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333BA8EB26E73DB30052EF99 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		333BA8ED26E74F540052EF99 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3372094B26EB4A6D0008FD80 /* DetailScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
+		3372094D26EB625D0008FD80 /* ZoomedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			children = (
 				333BA8D726E739D50052EF99 /* MainViewController.swift */,
 				333BA8ED26E74F540052EF99 /* DetailViewController.swift */,
+				3372094D26EB625D0008FD80 /* ZoomedViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				333BA8E726E73C430052EF99 /* CollectionViewCell.swift */,
+				3372094B26EB4A6D0008FD80 /* DetailScrollView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,8 +178,10 @@
 			files = (
 				333BA8D826E739D50052EF99 /* MainViewController.swift in Sources */,
 				333BA8EC26E73DB30052EF99 /* ImageModel.swift in Sources */,
+				3372094E26EB625D0008FD80 /* ZoomedViewController.swift in Sources */,
 				333BA8D426E739D50052EF99 /* AppDelegate.swift in Sources */,
 				333BA8EE26E74F540052EF99 /* DetailViewController.swift in Sources */,
+				3372094C26EB4A6D0008FD80 /* DetailScrollView.swift in Sources */,
 				333BA8E826E73C430052EF99 /* CollectionViewCell.swift in Sources */,
 				333BA8D626E739D50052EF99 /* SceneDelegate.swift in Sources */,
 			);
