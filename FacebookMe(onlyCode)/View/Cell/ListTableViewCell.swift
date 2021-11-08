@@ -61,7 +61,7 @@ class ListTableViewCell: UITableViewCell {
             self.listLabel.text = favorites.text[row]
             self.imageView?.image = nil
             // See More... 파란색으로 변경
-            if row == favorites.text.count-1 {
+            if row != 0 && row == favorites.text.count-1 {
                 self.listLabel.textColor = UIColor(red: 59, green: 89, blue: 152)
             }
             

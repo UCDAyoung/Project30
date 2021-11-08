@@ -16,49 +16,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ct0-X8-Te3">
-                                <rect key="frame" x="30" y="144" width="354" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ct0-X8-Te3">
+                                <rect key="frame" x="30" y="144" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.64705882349999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bB6-6H-NiY"/>
+                                    <constraint firstAttribute="width" constant="300" id="eLc-X8-hdF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-Eg-I30">
-                                <rect key="frame" x="186" y="278" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input some texts and press the enter or button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-Eg-I30">
+                                <rect key="frame" x="30.5" y="304" width="353" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MY-Sn-TCs">
-                                <rect key="frame" x="184" y="69" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MY-Sn-TCs">
+                                <rect key="frame" x="335" y="144" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="J3n-Kj-I4W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" image="paperplane.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="pressEnter" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ezg-iR-XUg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2x2-Eg-I30" firstAttribute="top" secondItem="ct0-X8-Te3" secondAttribute="bottom" constant="100" id="2CQ-IB-u9O"/>
                             <constraint firstItem="ct0-X8-Te3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="2op-W6-7av"/>
-                            <constraint firstItem="2MY-Sn-TCs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="9bO-dp-WPm"/>
-                            <constraint firstItem="ct0-X8-Te3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MPY-4O-eZd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ct0-X8-Te3" secondAttribute="trailing" constant="30" id="eX4-cP-EUS"/>
+                            <constraint firstItem="2MY-Sn-TCs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="fc4-nD-7Us"/>
+                            <constraint firstItem="2MY-Sn-TCs" firstAttribute="height" secondItem="ct0-X8-Te3" secondAttribute="height" id="kWp-x8-IC9"/>
                             <constraint firstItem="ct0-X8-Te3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kh3-YU-Pi2"/>
+                            <constraint firstItem="2MY-Sn-TCs" firstAttribute="leading" secondItem="ct0-X8-Te3" secondAttribute="trailing" constant="5" id="n4S-xp-6FV"/>
                             <constraint firstItem="2x2-Eg-I30" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nJ6-jj-As8"/>
-                            <constraint firstItem="2MY-Sn-TCs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="swB-wM-kB0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="2MY-Sn-TCs" id="LeF-ZY-Fu1"/>
-                        <outlet property="lable" destination="2x2-Eg-I30" id="vU1-TZ-FuV"/>
+                        <outlet property="label" destination="2x2-Eg-I30" id="vU1-TZ-FuV"/>
                         <outlet property="tf" destination="ct0-X8-Te3" id="EMU-AX-fJl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="75"/>
+            <point key="canvasLocation" x="18.840579710144929" y="75"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

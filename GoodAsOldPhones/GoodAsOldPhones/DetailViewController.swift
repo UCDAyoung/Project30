@@ -9,38 +9,30 @@ import UIKit
 class DetailViewController: UIViewController,UINavigationControllerDelegate {
     
     let assets = Assets()
+    var indexOfRow : Int = 0
    
     @IBOutlet weak var titleLabel : UILabel!
-    @IBOutlet weak var addToButton : UIButton!
+    @IBOutlet weak var addButton : UIButton!
     @IBOutlet weak var backImage : UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addToButton.setTitle("ADD TO CART", for: .normal)
+        addButton.layer.cornerRadius = CGFloat(10)
         
 //        let backBtn = UIImage(named: "icon-about-email")
 //        let leftItem = UIBarButtonItem(image: backBtn, style: .plain, target: self, action: nil)
 //        navVC.navigationItem.leftBarButtonItem = leftItem
-    
         
+        titleLabel.text = assets.productsTitle[indexOfRow]
+        backImage.image = UIImage(named : assets.backImage[indexOfRow])
         
 
     }
 
-    
-    func settings(indexPath : IndexPath){
-        self.titleLabel.text = assets.productsTitle[indexPath.row]
-        self.backImage.image = UIImage(named: assets.backImage[indexPath.row])
-    
-    }
-    private func configureTitleLabel(){
-        titleLabel.fon
-    }
     
     private func configureAddToCartButton(){
-        addToButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        addButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
     }
     @objc func didTapButton(){

@@ -8,19 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    
     var tb : UITableView!
     @IBOutlet weak var tf : UITextField!
-    @IBOutlet weak var lable : UILabel!
+    @IBOutlet weak var label : UILabel!
     @IBOutlet weak var button : UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tf.delegate = self
         
         tf.clearButtonMode = UITextField.ViewMode.always
-//        setting(textfield: tf)
+        setting(textfield: tf)
 
     }
+    
     func setting(textfield: UITextField) {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: textfield.frame.height))
         textfield.leftView = paddingView
@@ -40,7 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //리턴에 따라 텍스트 필드 편집 가능/불가능
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool{
         
-        return false
+        return true
     }// return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
 
 //
@@ -60,14 +63,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //    func textFieldDidChangeSelection(_ textField: UITextField)
 //
 //
-//
+//  // 텍스트 필드 초기화
     func textFieldShouldClear(_ textField: UITextField) -> Bool{
-        return false
+        return true
     }  // called when clear button pressed. return NO to ignore (no notifications)
     
+    //Enter 입력 시
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("return")
+        self.label.text = tf.text
         return true
+    }
+    @IBAction func pressEnter(){
+        self.label.text = tf.text
     }
 //
 //

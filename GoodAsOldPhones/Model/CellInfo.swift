@@ -18,7 +18,7 @@ internal class CellInfo {
 }
 
 struct Assets {
-
+    
     
 let backImage : [String] = [
     "phone-fullscreen1",
@@ -40,4 +40,8 @@ let productsTitle : [String] = [
     "1984 Moto Portable"
 ]
 
+}
+
+struct contactInfo {
+    static let detail = "Good as Old Phones returns the phones of yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most: \n\n Whether you are looking for a turn-of-tohe-century wall set or a Zack Morris Special, we've got you covered. Give us a ring, and we will get you connected."
 }
