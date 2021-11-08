@@ -8,7 +8,12 @@
 진행하면서 생긴 의문점 및 정리 
 
 1. [FacebookMe](#facebookme)
-# FacebookMe
+2. [GoodAsOldPhones](#goodasoldphones)
+3. [kingFisher](#kingfisher)
+4. [LED](#led)
+5. [textFieldPrac](#textfieldprac)
+6. [Calculator](#calculator)
+7. [CoreData](#coredata)
 
 ### 애플 네이밍 규칙에 의미를 이해하고 추리하자 <br> 
 did ~~  / will~~  / can ~~ ... etc <br>
@@ -60,17 +65,61 @@ vertically로 중앙정렬을 하고 x , horizontally로 중앙정렬하고 x를
 
 ### about DataStucture using MVC 
 
+# FacebookMe
+
+![FacebookMe](https://user-images.githubusercontent.com/70427427/140731033-06d2c981-09f8-48a9-8e1e-79ad2922da6e.gif)
+
+- tableViewDelegate, tableViewdataSource 사용 
+- 첫 과제부터 MVC,MVVM 두 모델로 만들어 볼려고 했더니, 꽤 힘들었지만 힘든만큼 디자인패턴에 대한 이해도가 올라감  
+- MVC : VC가 뷰와 모델 모두를 컨트롤 함. 그러다 보니, 장점은 모든걸 VC에서 처리하기 때문에 사용하기는 편하지만, VC가 비대해짐 
+- MVVM : View > ViewModel -> Model . VM이 모델을 관리하고 View가 VM을 구독하는 형태 
+- 코드와 스토리보드 둘 다 사용해봄. 둘 다 섞어서 사용하는게 편함.
+
+# GoodAsOldPhones
+
+![GoodAsOldPhones](https://user-images.githubusercontent.com/70427427/140731039-f7c19927-446a-4993-ba3e-088d9106620d.gif)
+- 데이터를 하드코딩하지 않고, 직접 참조할 수 있게 struct구조로 만들어서 데이터를 참조해서 데이터를 전달함. 
+- prepare, performSegue를 이용해서 데이터를 전달
+- UI구성에 가장 시간을 많이 사용함 'Cause font, image가 뷰 크기에 따라 잘리고 밀리는 현상
+- Scale to fil vs Aspect to fil vs Aspect to fit
+- Compression Priority vs Hugging Priority 
+<img width="372" alt="스크린샷 2021-11-08 오후 8 15 25" src="https://user-images.githubusercontent.com/70427427/140732633-b4fe15e7-38f0-457d-90b5-17b39c8f184d.png">
 
 
+# kingFisher
+
+![kingFisher](https://user-images.githubusercontent.com/70427427/140731048-bfd96885-f03a-4a6b-a995-cb5ed7d3f6d4.gif)
+
+- 라이브러리 사용 숙지 (E.g KingFisher) 
+- Swift Package Manager 이용해서 load 
 
 
+# LED
 
+![LED](https://user-images.githubusercontent.com/70427427/140731056-5f2604d1-6119-4cb5-96e8-754b639ad0ab.gif)
 
+- 색을 선택하는 뷰에서 -> 메인 뷰로 선택한 컬러를 전달하는 데이터 전달에 집중  
 
+# textFieldPrac
 
+![textFieldPrac](https://user-images.githubusercontent.com/70427427/140731065-4dbcc62e-05c9-45ca-b87e-99937e31788d.gif)
 
+- textField 문서를 뜯어보았다. 직접 뜯어보고 모든 function을 실행시켜보면서 이해를 해봄 
+- Documentaion을 최대한 이용하려고 하는 중..
 
+# Calculator
 
+![Calculator](https://user-images.githubusercontent.com/70427427/140731071-39d20ff4-96a8-4997-8a3a-b216a8536559.gif)
+
+- UI를 구성하는게 굉장히 까다로웠음. 
+- StackView를 활용하고, 비율을 이용해서 크기와 모양을 잡아야 함.
+
+# CoreData
+![CoreData](https://user-images.githubusercontent.com/70427427/140731084-f44ddaae-c4a7-434b-b09f-11f10b9d54e1.gif)
+
+- Coredata 흐름 이해 
+- [공식문서](https://developer.apple.com/documentation/coredata)
+- [참고영상](https://www.youtube.com/watch?v=M-3oFO7P1gQ)
 
 
 
