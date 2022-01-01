@@ -23,7 +23,7 @@ e.g. didEditing() 이라고 하면 Editing ~~하고나서~~ 실행되는 메소�
 ### class와 struct의 차이 
 일단 대표적으로, class는 참조, struct는 값타입이다.<br>
 class는 원본까지 직접 접근하여 값을 변경할 수 있다. 이에 반하여  stuct는 값타입이기 때문에, 복사를 통해서 사용하고 값을 변경할거면 따로 어떤 조치를 취해줘야한다. <br>
-Excel 과 SpreadSheet in Google 로 예를 들어보겠다. (멘토 현호님의 설명이 너무 와닿았다.) <br>
+Excel 과 SpreadSheet in Google 로 예를 들어보겠다.<br>
 친구와 같이 개발문서를 1)Excel 2)SpreadSheet 로 정리했다고 하자. <br> 
 
 *1) Excel 사용*<br>  
