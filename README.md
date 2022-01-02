@@ -119,5 +119,7 @@ x,y, width, height 모두 잡아야지 옳바르게 constraint를 한 것이다.
 - [공식문서](https://developer.apple.com/documentation/coredata)
 - [참고영상](https://www.youtube.com/watch?v=M-3oFO7P1gQ)
 
-
+# Git ignore
+굳이 올려도 되지 않을 파일들을 ignore파일에 정리 후 프로젝트를 생성하는 습관필요 <br>
+이 레포는 공부레포이기에 여러 프로젝트를 함께 저장 중이다. 그래서 공통되는 Pods폴더를 ignore 시켜놓은 상황. <br>
 
