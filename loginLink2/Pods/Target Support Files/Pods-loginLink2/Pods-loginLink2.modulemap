@@ -1,6 +1,0 @@
-framework module Pods_loginLink2 {
-  umbrella header "Pods-loginLink2-umbrella.h"
-
-  export *
-  module * { export * }
-}
