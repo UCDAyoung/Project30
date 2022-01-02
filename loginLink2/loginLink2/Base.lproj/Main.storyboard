@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="loginLink2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yi-66-fgb">
+                                <rect key="frame" x="148" y="94" width="118" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwT-iK-V3C">
+                                <rect key="frame" x="67" y="254" width="280" height="69"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Icon-256"/>
+                                <connections>
+                                    <action selector="tapGoogleLoginButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Osn-Hx-SgJ"/>
+                                    <segue destination="Mb3-nK-Tt2" kind="show" identifier="nextVC" id="UkG-B6-Rp8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecm-SM-qGn">
+                                <rect key="frame" x="45" y="353" width="324" height="59"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="kakao_login_medium_wide"/>
+                                <connections>
+                                    <action selector="tapKakaoLoginButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dK8-ZN-Lk0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.89064186810000001" green="0.88908857109999995" blue="0.97256809470000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Ecm-SM-qGn" firstAttribute="top" secondItem="dwT-iK-V3C" secondAttribute="bottom" constant="30" id="5jA-vl-odN"/>
+                            <constraint firstItem="dwT-iK-V3C" firstAttribute="top" secondItem="7Yi-66-fgb" secondAttribute="bottom" constant="100" id="Fdd-Lz-6dn"/>
+                            <constraint firstItem="7Yi-66-fgb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MEw-1C-qAl"/>
+                            <constraint firstItem="7Yi-66-fgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aby-v1-GAd"/>
+                            <constraint firstItem="Ecm-SM-qGn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="teC-Ek-Ftv"/>
+                            <constraint firstItem="dwT-iK-V3C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSJ-hA-b1E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249.27536231884059" y="-61.607142857142854"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="c3J-Cm-Rrp">
+            <objects>
+                <viewController storyboardIdentifier="nextVC" id="Mb3-nK-Tt2" customClass="NextViewController" customModule="loginLink2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="puB-Ny-RSv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2i-sY-A4j">
+                                <rect key="frame" x="10" y="30" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PFT-8h-Gf1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PFT-8h-Gf1" firstAttribute="trailing" secondItem="N2i-sY-A4j" secondAttribute="trailing" constant="10" id="8dU-0P-M9f"/>
+                            <constraint firstItem="N2i-sY-A4j" firstAttribute="centerX" secondItem="puB-Ny-RSv" secondAttribute="centerX" id="A2r-oA-7Qb"/>
+                            <constraint firstItem="N2i-sY-A4j" firstAttribute="top" secondItem="PFT-8h-Gf1" secondAttribute="top" constant="30" id="Ufs-57-Jle"/>
+                            <constraint firstItem="N2i-sY-A4j" firstAttribute="leading" secondItem="PFT-8h-Gf1" secondAttribute="leading" constant="10" id="Wr1-yC-Phg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2gU-Gy-jqj"/>
+                    <connections>
+                        <outlet property="UILabel" destination="N2i-sY-A4j" id="kgt-E0-zfn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeY-UA-NGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="-62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-256" width="256" height="55"/>
+        <image name="kakao_login_medium_wide" width="300" height="45"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

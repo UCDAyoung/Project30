@@ -7,9 +7,11 @@
 
 import UIKit
 
+var memo = [Memo]()
+
 class MainViewController: UIViewController{
     
-    var memo = [Memo]()
+    
     @IBOutlet weak var myTableView: UITableView!
     
             
@@ -36,6 +38,7 @@ class MainViewController: UIViewController{
 
 extension MainViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(memo.count)
         return memo.count
     }
     
@@ -54,7 +57,7 @@ extension MainViewController : UITableViewDelegate,UITableViewDataSource{
             do {
                 try context.delete(memo[indexPath.row]) // context가 관리자같은데..? 메소드로 delete메소드가 존재하는데?
                 DBManager.shared.saveContext()
-                memo.remove(at: indexPath.row) //띠용?? 위에도 delete가 있는데..? 뭐지..
+//                memo.remove(at: indexPath.row) //띠용?? 위에도 delete가 있는데..? 뭐지..
                 tableView.deleteRows(at: [indexPath], with: .automatic) //와 테이블뷰에 열을 삭제하는게 존재하네
             }catch {
                 print("error")

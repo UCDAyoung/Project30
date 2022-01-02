@@ -26,6 +26,7 @@ class DBManager {
 
     // MARK: - Core Data Saving support
     lazy var context = persistentContainer.viewContext
+    
     func saveContext () {
         
         if context.hasChanges {

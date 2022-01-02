@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HbM-0H-ZYJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HbM-0H-ZYJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,10 +42,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibl-ed-FaJ">
+                                <rect key="frame" x="50" y="70" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="1p9-xP-OcO" kind="show" id="fjY-jS-AqP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ibl-ed-FaJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0GI-LW-v9B"/>
+                            <constraint firstItem="ibl-ed-FaJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="70" id="3UJ-DU-oqB"/>
                             <constraint firstItem="82R-eZ-ciL" firstAttribute="top" secondItem="Eeu-gS-67z" secondAttribute="bottom" constant="102" id="IKJ-I6-WhP"/>
                             <constraint firstItem="yld-IZ-P3L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Id6-IG-5HO"/>
                             <constraint firstItem="Eeu-gS-67z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEk-BT-Jra"/>
@@ -77,7 +88,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2244.927536231884" y="-173.4375"/>
+            <point key="canvasLocation" x="2243.4782608695655" y="-173.4375"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="NMz-W9-s9t">
+            <objects>
+                <viewController id="1p9-xP-OcO" customClass="NextViewController" customModule="CoreDataIsEasy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qHA-eh-gJ2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZA-hj-ETv">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HdV-Hb-o7P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eZA-hj-ETv" firstAttribute="centerX" secondItem="qHA-eh-gJ2" secondAttribute="centerX" id="5gj-ap-kFI"/>
+                            <constraint firstItem="eZA-hj-ETv" firstAttribute="centerY" secondItem="qHA-eh-gJ2" secondAttribute="centerY" id="V5M-Io-4gc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JDu-T2-9WV"/>
+                    <connections>
+                        <outlet property="label" destination="eZA-hj-ETv" id="D6i-gi-ABj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Wf-Gp-S5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3064" y="-173"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="ADK-CT-G15">
@@ -92,7 +134,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="wfI-i1-D3J" detailTextLabel="7Nc-Ca-4kq" style="IBUITableViewCellStyleSubtitle" id="Ov3-vc-T5S">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ov3-vc-T5S" id="nL9-6M-Y4y">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>

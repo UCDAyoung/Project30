@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3373838F275CAFD200C89024 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3373838E275CAFD200C89024 /* NextViewController.swift */; };
 		33B997822705C69C0029E3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B997812705C69C0029E3C9 /* AppDelegate.swift */; };
 		33B997842705C69C0029E3C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B997832705C69C0029E3C9 /* SceneDelegate.swift */; };
 		33B997862705C69C0029E3C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B997852705C69C0029E3C9 /* MainViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3373838E275CAFD200C89024 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		33B9977E2705C69C0029E3C9 /* CoreDataIsEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataIsEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B997812705C69C0029E3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33B997832705C69C0029E3C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				33B997832705C69C0029E3C9 /* SceneDelegate.swift */,
 				33B997852705C69C0029E3C9 /* MainViewController.swift */,
 				33B997982705C8590029E3C9 /* AddViewController.swift */,
+				3373838E275CAFD200C89024 /* NextViewController.swift */,
 				33B9979E2705D1AA0029E3C9 /* DBManager.swift */,
 				33B997872705C69C0029E3C9 /* Main.storyboard */,
 				33B9978D2705C69F0029E3C9 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				33B9979C2705D1860029E3C9 /* Memo+CoreDataClass.swift in Sources */,
 				33B997822705C69C0029E3C9 /* AppDelegate.swift in Sources */,
 				33B9979D2705D1860029E3C9 /* Memo+CoreDataProperties.swift in Sources */,
+				3373838F275CAFD200C89024 /* NextViewController.swift in Sources */,
 				33B997842705C69C0029E3C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
