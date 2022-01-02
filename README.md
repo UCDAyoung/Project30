@@ -23,7 +23,7 @@ e.g. didEditing() 이라고 하면 Editing ~~하고나서~~ 실행되는 메소�
 ### class와 struct의 차이 
 일단 대표적으로, class는 참조, struct는 값타입이다.<br>
 class는 원본까지 직접 접근하여 값을 변경할 수 있다. 이에 반하여  stuct는 값타입이기 때문에, 복사를 통해서 사용하고 값을 변경할거면 따로 어떤 조치를 취해줘야한다. <br>
-Excel 과 SpreadSheet in Google 로 예를 들어보겠다. (멘토 현호님의 설명이 너무 와닿았다.) <br>
+Excel 과 SpreadSheet in Google 로 예를 들어보겠다.<br>
 친구와 같이 개발문서를 1)Excel 2)SpreadSheet 로 정리했다고 하자. <br> 
 
 *1) Excel 사용*<br>  
@@ -32,7 +32,7 @@ Excel 과 SpreadSheet in Google 로 예를 들어보겠다. (멘토 현호님의
 구글스프레드시트인 경우, 친구가 수정하는 즉시 바로 변경됨을 확인할 수 있다.<br>
 <br>
 이 경우를 App으로 가져와서 본다면, 어떠한 화면에서 시트를 작성할 때 바로바로 동기화를 해줘야 할 것이 있다면, 반대로, 작성 버튼이나 확인버튼 같은 추가조치를 할 때 동기화가 필요한 경우이다. <br>
-가능하면 struct를 이용하면 되고, class를 이용해야하는 경우 (메모리를 올려놓은 상태에서 바로바로 동기화를 시켜야하는 경우)만 사용해주면 된다고 한다.  
+가능하면 struct를 이용하면 되고, class를 이용해야하는 경우 (메모리를 올려놓은 상태에서 바로바로 동기화를 시켜야하는 경우)만 사용해주면 된다고 한다. <br> 
 
 ### 언제 viewDidLoad()에 넣어서 사용하는걸까? 
 뷰가 로드됬을 때, 변경될 사항도 많지 않고, 가져다 쓰기만하며 될 기본적인 것들? <br>
@@ -56,8 +56,6 @@ MVVM (Model View ViewModel) <br>
 
 ### 오토레이아웃
 x,y, width, height 모두 잡아야지 옳바르게 constraint를 한 것이다.<br>
-*이상한 점* <br>
-vertically로 중앙정렬을 하고 x , horizontally로 중앙정렬하고 x를 constraint 추가적으로 해줘야한다. 
 
 ### private func 
 
